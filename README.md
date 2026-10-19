@@ -30,22 +30,24 @@ Modelo de site e-commerce de alto padrão desenvolvido para a marca **Izaura Sem
   - Títulos e Destaques: `Cinzel` (Serifada clássica e imponente)
   - Subtítulos e Menus: `Outfit` (Moderna, geométrica e espaçada)
   - Corpo de texto e descrições: `Jost` (Minimalista e refinada, idêntica à referência da Saint Germain)
-- **Logotipo**: Monograma "IS" com moldura de diamante em gradiente dourado (`assets/logo-izaura.svg`).
+- **Logotipo**: Monograma oficial "IS" com borboleta em preto nobre com fundo transparente (`assets/logo-izaura.png` e `assets/logo-izaura.svg`).
 
 ---
 
 ## 🚀 Estrutura de Arquivos
 
 ```
-RaridadeGold/
+Izaurajoias/
 ├── index.html                   # Página principal com arquitetura completa
 ├── css/
 │   └── style.css                # Design System completo, responsivo e com micro-interações
 ├── js/
 │   └── app.js                   # Motor interativo (Carrinho, Busca, Espiada Rápida, Filtros)
 ├── assets/
-│   ├── logo-izaura.svg          # Logotipo vetorial Izaura Semijoias
-│   └── logo.jpg                 # Imagem de backup
+│   ├── logo-izaura.png          # Logotipo oficial monograma IS com borboleta (preto transparente)
+│   ├── logo-izaura.svg          # Logotipo em formato vetorial
+│   ├── logo-izaura-white.png    # Versão em branco para fundos escuros
+│   └── logo-izaura-original.jpg # Imagem original do monograma
 └── README.md                    # Documentação do projeto
 ```
 
