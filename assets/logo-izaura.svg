@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E7C4" />
+      <stop offset="35%" stop-color="#DFBF7A" />
+      <stop offset="70%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#9E7D3B" />
+    </linearGradient>
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414" />
+      <stop offset="100%" stop-color="#0A0A0A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo Preto Luxo -->
+  <rect width="500" height="500" rx="30" fill="url(#darkBg)"/>
+
+  <!-- Moldura Diamante Dourada Externa -->
+  <rect x="110" y="110" width="280" height="280" rx="8" transform="rotate(45 250 250)" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-dasharray="10 6" opacity="0.6"/>
+  
+  <!-- Moldura Diamante Dourada Principal -->
+  <rect x="125" y="125" width="250" height="250" rx="4" transform="rotate(45 250 250)" fill="none" stroke="url(#goldGrad)" stroke-width="4.5"/>
+
+  <!-- Brilho / Estrela Superior Esquerda -->
+  <path d="M 120 120 Q 120 100 110 90 Q 120 100 120 80 Q 120 100 130 90 Q 120 100 120 120 Z" fill="url(#goldGrad)" transform="translate(10, 20)"/>
+  <circle cx="130" cy="110" r="3" fill="#FFF" />
+
+  <!-- Monograma Central 'I' e 'S' Elegantes -->
+  <g font-family="'Cinzel', 'Playfair Display', serif" font-weight="700" fill="url(#goldGrad)" text-anchor="middle">
+    <!-- Letra I -->
+    <text x="210" y="295" font-size="160" letter-spacing="-5">I</text>
+    <!-- Letra S entrelaçada -->
+    <text x="285" y="305" font-size="160" letter-spacing="-5" opacity="0.95">S</text>
+  </g>
+
+  <!-- Pequeno diamante inferior -->
+  <polygon points="250,395 256,403 250,411 244,403" fill="url(#goldGrad)"/>
+</svg>

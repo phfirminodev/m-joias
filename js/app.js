@@ -1,175 +1,176 @@
 /**
- * RARIDADE GOLD - INTERACTIVE APP ENGINE
- * Inspirado na experiência de e-commerce Saint Germain Brand
+ * IZAURA SEMIJOIAS - INTERACTIVE APP ENGINE
+ * Joalheria fina & Semijoias em Sobradinho, Brasília - DF
+ * Avaliação 5.0 ★★★★★ (52 avaliações no Google)
  */
 
 // ==========================================================================
-// BANCO DE DADOS DE PRODUTOS (PRODUTOS RARIDADE GOLD)
+// BANCO DE DADOS DE PRODUTOS (IZAURA SEMIJOIAS)
 // ==========================================================================
 const PRODUCTS = [
   {
     id: 1,
-    name: "Relógio Masculino Imperial Chrono Gold 42mm",
-    category: "relogios",
-    tags: ["bestseller", "relogios"],
-    badge: "BEST SELLER",
+    name: "Conjunto Raiane: Brincos Argola + Colar Ponto de Luz 18K",
+    category: "conjuntos",
+    tags: ["bestseller", "conjuntos"],
+    badge: "MAIS VENDIDO",
     badgeType: "badge-gold",
-    priceCompare: 1890.00,
-    price: 1390.00,
+    priceCompare: 449.00,
+    price: 349.00,
     rating: 5.0,
-    reviewsCount: 142,
-    imgMain: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80",
-    imgHover: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=700&q=80",
-    colors: ["#C5A059", "#111111", "#CCCCCC"],
-    sizes: ["42mm (Padrão)"],
-    description: "Caixa em aço inoxidável 316L banhado a ouro 18K com mostrador sunray champanhe. Movimento cronógrafo de alta precisão, vidro de safira antirrisco e resistência à água 5ATM."
+    reviewsCount: 52,
+    imgMain: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80",
+    imgHover: "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=700&q=80",
+    colors: ["#C5A059", "#E5E5E5"],
+    sizes: ["Tamanho Único"],
+    description: "Conjunto clássico e delicado que conquistou nossas clientes: par de brincos argola cravejada com microzircônias e colar ponto de luz em berço de ouro 18K. Hipoalergênico, com garantia e embalagem para presente."
   },
   {
     id: 2,
-    name: "Corrente Grumet Maciça Ouro 18K 750 (70cm / 8mm)",
-    category: "joias",
-    tags: ["lancamentos", "joias"],
+    name: "Corrente Veneziana Banhada a Ouro 18K com Pingente Mandala",
+    category: "correntes",
+    tags: ["bestseller", "correntes"],
     badge: "OURO 18K",
     badgeType: "badge-gold",
-    priceCompare: 4990.00,
-    price: 3890.00,
-    rating: 4.9,
-    reviewsCount: 98,
+    priceCompare: 299.00,
+    price: 229.00,
+    rating: 5.0,
+    reviewsCount: 48,
     imgMain: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80",
     imgHover: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=700&q=80",
     colors: ["#C5A059", "#E5E5E5"],
-    sizes: ["60cm", "70cm", "80cm"],
-    description: "Autêntico ouro 18k 750 maciço. Elo Grumet duplo diamantado com fecho gaveta com trava dupla de segurança. Acompanha certificado eterno do teor do ouro e estojo aveludado."
+    sizes: ["45cm", "50cm", "60cm"],
+    description: "Corrente metálica elo veneziana diamantada com banho reforçado de ouro 18K e verniz protetor cataforético. Pingente mandala detalhado com brilho refinado. Fecho resistente com trava."
   },
   {
     id: 3,
-    name: "Relógio Feminino Belle Petite Gold & White 32mm",
-    category: "relogios",
-    tags: ["bestseller", "relogios"],
-    badge: "NOVO",
-    badgeType: "badge-new",
-    priceCompare: 1290.00,
-    price: 890.00,
-    rating: 4.9,
-    reviewsCount: 84,
-    imgMain: "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=700&q=80",
-    imgHover: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80",
-    colors: ["#C5A059", "#E8B4B8", "#C0C0C0"],
-    sizes: ["32mm (Feminino)"],
-    description: "Design ultrafino e minimalista. Mostrador madrepérola natural com marcadores em cristais de zircônia e pulseira de malha de aço mesh banhada a ouro."
+    name: "Brinco Argola Cravejada com Microzircônias 5A Ouro 18K",
+    category: "brincos",
+    tags: ["bestseller", "brincos"],
+    badge: "DESTAQUE",
+    badgeType: "badge-gold",
+    priceCompare: 219.00,
+    price: 169.00,
+    rating: 5.0,
+    reviewsCount: 52,
+    imgMain: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=700&q=80",
+    imgHover: "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=700&q=80",
+    colors: ["#C5A059", "#E5E5E5"],
+    sizes: ["P (12mm)", "M (16mm)", "G (20mm)"],
+    description: "Argola queridinha das clientes Izaura: fecho click super prático e confortável, cravação frontal e interna com zircônias de corte brilhante. Perfeita para usar todos os dias com elegância."
   },
   {
     id: 4,
-    name: "Pulseira Riviera Cravejada Ouro 18K Zircônias",
-    category: "joias",
-    tags: ["bestseller", "joias"],
-    badge: "DESTAQUE",
+    name: "Pulseira Riviera Cravejada com Zircônias Cristais Ouro 18K",
+    category: "conjuntos",
+    tags: ["bestseller", "conjuntos"],
+    badge: "LUXO",
     badgeType: "badge-gold",
-    priceCompare: 2200.00,
-    price: 1690.00,
+    priceCompare: 389.00,
+    price: 289.00,
     rating: 5.0,
-    reviewsCount: 112,
+    reviewsCount: 46,
     imgMain: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=700&q=80",
     imgHover: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80",
     colors: ["#C5A059", "#E5E5E5"],
-    sizes: ["18cm", "20cm", "22cm"],
-    description: "O clássico atemporal da alta joalheria. Mais de 40 pedras de zircônia cúbica lapidação brilhante 5A cravadas à mão em berço de ouro 18k."
+    sizes: ["16cm", "18cm", "20cm"],
+    description: "A clássica Riviera que nunca sai de moda. Pedras de zircônia cúbica 5A cravadas individualmente em garras polidas. Fecho gaveta duplo de alta joalheria."
   },
   {
     id: 5,
-    name: "Kit Royale: Relógio Ouro + Pulseira Grumet 18k",
-    category: "kits",
+    name: "Conjunto Duo: Colar Choker + Brinco Gota Zircônia",
+    category: "conjuntos",
     tags: ["kits", "bestseller"],
-    badge: "-28% OFF",
+    badge: "-25% OFF",
     badgeType: "badge-discount",
-    priceCompare: 2890.00,
-    price: 1990.00,
+    priceCompare: 420.00,
+    price: 315.00,
     rating: 5.0,
-    reviewsCount: 167,
-    imgMain: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80",
+    reviewsCount: 51,
+    imgMain: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80",
     imgHover: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80",
     colors: ["#C5A059"],
     sizes: ["Único"],
-    description: "Combo exclusivo: Relógio Royale Gold 40mm acompanhado da Pulseira Grumet Banhada a Ouro 18K. Inclui estojo duplo de luxo e flanela de polimento."
+    description: "Harmonia impecável entre a choker de elos delicados e o par de brincos com pedra em formato de gota facetada. Ideal para presentear com estilo e afeto."
   },
   {
     id: 6,
-    name: "Anel Solitário Supreme Diamante Zircônia Ouro 18K",
-    category: "joias",
-    tags: ["lancamentos", "joias"],
+    name: "Anel Solitário Supreme Cristal Lapidado Ouro 18K",
+    category: "aneis",
+    tags: ["lancamentos", "aneis"],
     badge: "EXCLUSIVO",
     badgeType: "badge-gold",
-    priceCompare: 1650.00,
-    price: 1250.00,
-    rating: 4.9,
-    reviewsCount: 63,
+    priceCompare: 230.00,
+    price: 179.00,
+    rating: 5.0,
+    reviewsCount: 43,
     imgMain: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80",
     imgHover: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=700&q=80",
     colors: ["#C5A059", "#E5E5E5"],
     sizes: ["Aro 14", "Aro 16", "Aro 18", "Aro 20", "Aro 22"],
-    description: "A joia perfeita para momentos inesquecíveis. Pedra central de 1 quilate lapidação brilhante com suporte em garras polidas em ouro amarelo 18k 750."
+    description: "Anel solitário elegante com zircônia premium central de 6mm. Banho espesso em ouro 18K, tecnologia antialérgica livre de níquel e acabamento espelhado."
   },
   {
     id: 7,
-    name: "Pingente Crucifixo Lapidado Ouro Maciço 18K",
-    category: "joias",
-    tags: ["joias"],
-    badge: "OURO 18K",
-    badgeType: "badge-gold",
-    priceCompare: 1450.00,
-    price: 1100.00,
+    name: "Brinco Ear Cuff Pérolas Shell & Cristais Navete",
+    category: "brincos",
+    tags: ["lancamentos", "brincos"],
+    badge: "NOVO",
+    badgeType: "badge-new",
+    priceCompare: 210.00,
+    price: 159.00,
     rating: 5.0,
-    reviewsCount: 89,
-    imgMain: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80",
-    imgHover: "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=700&q=80",
+    reviewsCount: 39,
+    imgMain: "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=700&q=80",
+    imgHover: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=700&q=80",
     colors: ["#C5A059"],
-    sizes: ["3.5cm", "4.5cm"],
-    description: "Esculpido em ouro 18k com acabamento diamantado e cortes que refletem a luz com intensidade. Passador reforçado compatível com correntes até 10mm."
+    sizes: ["Par Padrão"],
+    description: "Acessório moderno que contorna a orelha com suavidade e sofisticação. Pérolas shell com brilho natural combinadas com zircônias em corte navete."
   },
   {
     id: 8,
-    name: "Relógio Minimalista Chelsea Full Black & Gold 40mm",
-    category: "relogios",
-    tags: ["relogios", "lancamentos"],
-    badge: "EDIÇÃO LIMITADA",
+    name: "Corrente Elo Português 45cm com Fecho Boia Frontal",
+    category: "correntes",
+    tags: ["correntes", "lancamentos"],
+    badge: "TENDÊNCIA",
     badgeType: "badge-new",
-    priceCompare: 1490.00,
-    price: 1090.00,
-    rating: 4.8,
-    reviewsCount: 76,
-    imgMain: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=700&q=80",
-    imgHover: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80",
-    colors: ["#111111", "#C5A059"],
-    sizes: ["40mm"],
-    description: "Mostrador preto fosco acetinado com ponteiros e indexes banhados a ouro champanhe. Pulseira em couro legítimo preto com fecho gravado a laser."
+    priceCompare: 290.00,
+    price: 229.00,
+    rating: 5.0,
+    reviewsCount: 47,
+    imgMain: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80",
+    imgHover: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80",
+    colors: ["#C5A059"],
+    sizes: ["45cm"],
+    description: "Corrente encorpada em elo português com fecho boia decorativo que pode ser usado para frente. Uma semijoia versátil, contemporânea e cheia de personalidade."
   }
 ];
 
 // ==========================================================================
 // ESTADO GLOBAL DO CARRINHO E WISHLIST
 // ==========================================================================
-class RaridadeStore {
+class IzauraStore {
   constructor() {
     this.cart = this.loadCart();
     this.wishlist = this.loadWishlist();
     this.coupon = null;
     this.discountPercent = 0;
-    this.freeShippingThreshold = 299.00;
+    this.freeShippingThreshold = 199.00;
 
     this.init();
   }
 
   loadCart() {
     try {
-      const saved = localStorage.getItem('raridade_gold_cart');
+      const saved = localStorage.getItem('izaura_semijoias_cart');
       return saved ? JSON.parse(saved) : [
         {
           id: 1,
-          name: "Relógio Masculino Imperial Chrono Gold 42mm",
-          variant: "Ouro Champanhe / 42mm",
-          price: 1390.00,
+          name: "Conjunto Raiane: Brincos Argola + Colar Ponto de Luz 18K",
+          variant: "Dourado / Único",
+          price: 349.00,
           qty: 1,
-          img: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80"
+          img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80"
         }
       ];
     } catch (e) {
@@ -178,21 +179,21 @@ class RaridadeStore {
   }
 
   saveCart() {
-    localStorage.setItem('raridade_gold_cart', JSON.stringify(this.cart));
+    localStorage.setItem('izaura_semijoias_cart', JSON.stringify(this.cart));
     this.renderCartUI();
   }
 
   loadWishlist() {
     try {
-      const saved = localStorage.getItem('raridade_gold_wishlist');
-      return saved ? JSON.parse(saved) : [1, 2];
+      const saved = localStorage.getItem('izaura_semijoias_wishlist');
+      return saved ? JSON.parse(saved) : [1, 3];
     } catch (e) {
       return [];
     }
   }
 
   saveWishlist() {
-    localStorage.setItem('raridade_gold_wishlist', JSON.stringify(this.wishlist));
+    localStorage.setItem('izaura_semijoias_wishlist', JSON.stringify(this.wishlist));
     this.updateWishlistBadges();
   }
 
@@ -243,11 +244,11 @@ class RaridadeStore {
 
   applyCoupon(code) {
     const cleanCode = code.trim().toUpperCase();
-    if (cleanCode === "RARIDADE10" || cleanCode === "OURO10") {
+    if (cleanCode === "IZAURA10" || cleanCode === "SOBRADINHO10" || cleanCode === "BEMVINDA") {
       this.coupon = cleanCode;
       this.discountPercent = 10;
       this.renderCartUI();
-      showToast("Cupom de 10% OFF aplicado com sucesso!");
+      showToast("Cupom Izaura de 10% OFF aplicado com sucesso!");
       return true;
     } else if (cleanCode === "VIP15") {
       this.coupon = cleanCode;
@@ -330,7 +331,7 @@ class RaridadeStore {
         <div class="cart-empty-state">
           <svg viewBox="0 0 512 512"><path d="M463.54,164.66c-14.69-16.9-35.96-26.65-58.35-26.75H151.58l-4.87-16.78c-9.79-32.25-39.24-54.54-72.94-55.2l-1.22-.24h-24.31c-10.08,0-18.24,8.16-18.24,18.24s8.16,18.24,18.24,18.24h24.31c18.41,.16,34.43,12.59,39.15,30.4l61.51,207.4c9.93,32.68,40.01,55.07,74.16,55.2h142.97c38.89-.42,71.5-29.5,76.35-68.08l14.59-100.66c3.39-22.19-3.1-44.76-17.75-61.76h0Zm-18.24,57.14l-14.59,100.9c-3.19,19.87-20.24,34.56-40.36,34.77H247.38c-18.06,0-33.99-11.86-39.15-29.18l-45.72-154.15h243.14c11.91,.18,23.15,5.56,30.76,14.73,7.61,9.16,10.86,21.19,8.87,32.93h.01Z"/></svg>
           <p>Sua sacola de compras está vazia.</p>
-          <a href="#produtos" onclick="store.closeCart()" class="btn btn-primary-gold" style="margin-top: 15px; font-size: 11px;">Explorar Catálogo</a>
+          <a href="#produtos" onclick="store.closeCart()" class="btn btn-primary-gold" style="margin-top: 15px; font-size: 11px;">Ver Semijoias</a>
         </div>
       `;
     } else {
@@ -365,7 +366,7 @@ class RaridadeStore {
     const progressBar = document.getElementById('shippingProgressBar');
     if (shippingText && progressBar) {
       if (remainingForFreeShipping <= 0) {
-        shippingText.innerHTML = `🎉 Parabéns! Você ganhou <strong>FRETE GRÁTIS</strong> com seguro.`;
+        shippingText.innerHTML = `🎉 Parabéns! Você ganhou <strong>FRETE GRÁTIS</strong> com seguro e embalagem especial!`;
         progressBar.style.width = '100%';
       } else {
         shippingText.innerHTML = `Faltam <strong>R$ ${remainingForFreeShipping.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</strong> para você garantir <strong>FRETE GRÁTIS</strong>!`;
@@ -406,7 +407,7 @@ class RaridadeStore {
 // Inicializa a loja
 let store;
 document.addEventListener('DOMContentLoaded', () => {
-  store = new RaridadeStore();
+  store = new IzauraStore();
   initAnnouncementBar();
   initHeroSlider();
   initProductsGrid();
@@ -507,11 +508,19 @@ function initHeroSlider() {
 }
 
 // ==========================================================================
-// GRID DE PRODUTOS & TABS DE FILTRO (SAINT GERMAIN EXACT STYLE)
+// GRID DE PRODUTOS & TABS DE FILTRO (IZAURA SEMIJOIAS)
 // ==========================================================================
 function initProductsGrid() {
   const grid = document.getElementById('productsGrid');
   const tabs = document.querySelectorAll('.filter-tab-btn');
+
+  const catLabels = {
+    conjuntos: 'Conjuntos Delicados',
+    colares: 'Colares & Chokers',
+    brincos: 'Brincos & Argolas',
+    correntes: 'Correntes Metálicas',
+    aneis: 'Anéis & Alianças'
+  };
 
   function render(filter = 'todos') {
     if (!grid) return;
@@ -521,18 +530,23 @@ function initProductsGrid() {
       filtered = PRODUCTS.filter(p => p.tags.includes('bestseller'));
     } else if (filter === 'lancamentos') {
       filtered = PRODUCTS.filter(p => p.tags.includes('lancamentos'));
-    } else if (filter === 'relogios') {
-      filtered = PRODUCTS.filter(p => p.category === 'relogios');
-    } else if (filter === 'joias') {
-      filtered = PRODUCTS.filter(p => p.category === 'joias');
-    } else if (filter === 'kits') {
-      filtered = PRODUCTS.filter(p => p.category === 'kits');
+    } else if (filter === 'brincos') {
+      filtered = PRODUCTS.filter(p => p.category === 'brincos');
+    } else if (filter === 'colares') {
+      filtered = PRODUCTS.filter(p => p.category === 'colares');
+    } else if (filter === 'aneis') {
+      filtered = PRODUCTS.filter(p => p.category === 'aneis');
+    } else if (filter === 'correntes') {
+      filtered = PRODUCTS.filter(p => p.category === 'correntes');
+    } else if (filter === 'conjuntos') {
+      filtered = PRODUCTS.filter(p => p.category === 'conjuntos');
     }
 
     grid.innerHTML = filtered.map(product => {
       const isFav = store ? store.wishlist.includes(product.id) : false;
       const installmentsVal = (product.price / 12).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
       const pixVal = (product.price * 0.95).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      const label = catLabels[product.category] || 'Semijoia Fina';
 
       return `
         <div class="product-card" data-product-id="${product.id}">
@@ -557,7 +571,7 @@ function initProductsGrid() {
           </div>
 
           <div class="product-info">
-            <span class="product-category-tag">${product.category === 'relogios' ? 'Relojoaria Fina' : product.category === 'joias' ? 'Ouro 18K' : 'Kits Exclusivos'}</span>
+            <span class="product-category-tag">${label}</span>
             <h3 class="product-title">
               <a href="javascript:void(0)" onclick="openQuickView(${product.id})">${product.name}</a>
             </h3>
@@ -579,7 +593,7 @@ function initProductsGrid() {
                 <span class="price-current">R$ ${product.price.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</span>
               </div>
               <div class="price-installments">12x de <strong>R$ ${installmentsVal}</strong> sem juros</div>
-              <div class="price-pix-discount">R$ ${pixVal} à vista no Pix</div>
+              <div class="price-pix-discount">R$ ${pixVal} à vista no Pix (5% OFF)</div>
             </div>
 
             <button class="btn-add-card" onclick="store.addToCart(${product.id})">
@@ -631,12 +645,12 @@ function openQuickView(productId) {
     </div>
 
     <div class="quickview-info">
-      <span class="product-category-tag">${product.badge} • ${product.category.toUpperCase()}</span>
+      <span class="product-category-tag">${product.badge} • IZAURA SEMIJOIAS</span>
       <h2 class="quickview-title">${product.name}</h2>
       
       <div class="product-rating">
         <div class="rating-stars">★★★★★</div>
-        <span class="rating-count">${product.rating} (${product.reviewsCount} avaliações de clientes verificados)</span>
+        <span class="rating-count">${product.rating} (${product.reviewsCount} avaliações no Google Maps)</span>
       </div>
 
       <div class="quickview-price">
@@ -667,7 +681,7 @@ function openQuickView(productId) {
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
           Adicionar à Sacola
         </button>
-        <button class="btn btn-outline-dark" onclick="buyViaWhatsApp(${product.id})" title="Tirar Dúvidas com Concierge VIP">
+        <button class="btn btn-outline-dark" onclick="buyViaWhatsApp(${product.id})" title="Atendimento com a Iza no WhatsApp">
           WhatsApp
         </button>
       </div>
@@ -749,7 +763,7 @@ function initSearchModal() {
 
     if (matches.length === 0) {
       resultsContainer.style.display = 'block';
-      resultsContainer.innerHTML = `<div style="padding: 15px; text-align: center; color: #888; font-size: 13px;">Nenhum produto encontrado para "${query}". Tente buscar por "Relógio", "Ouro", "Grumet" ou "Anel".</div>`;
+      resultsContainer.innerHTML = `<div style="padding: 15px; text-align: center; color: #888; font-size: 13px;">Nenhuma semijoia encontrada para "${query}". Tente buscar por "Brinco", "Colar", "Anel", "Mandala" ou "Argola".</div>`;
     } else {
       resultsContainer.style.display = 'block';
       resultsContainer.innerHTML = matches.map(p => `
@@ -829,14 +843,14 @@ function initHeaderScroll() {
 }
 
 // ==========================================================================
-// WHATSAPP CONCIERGE INTEGRATION
+// WHATSAPP CONCIERGE INTEGRATION (IZAURA SEMIJOIAS)
 // ==========================================================================
 function buyViaWhatsApp(productId) {
   const product = PRODUCTS.find(p => p.id === Number(productId));
-  const phone = "5511999999999"; // Número de suporte Raridade Gold
-  let msg = "Olá! Gostaria de atendimento personalizado para comprar na Raridade Gold.";
+  const phone = "5561996050988"; // WhatsApp Izaura Semijoias: (61) 99605-0988
+  let msg = "Olá Izaura Semijoias! Gostaria de atendimento personalizado para escolher minhas peças.";
   if (product) {
-    msg = `Olá! Gostaria de mais informações sobre o produto: *${product.name}* (Ref #${product.id}) no valor de R$ ${product.price.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}.`;
+    msg = `Olá Iza! Gostaria de mais informações sobre a semijoia: *${product.name}* (Ref #${product.id}) no valor de R$ ${product.price.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}.`;
   }
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
@@ -844,16 +858,16 @@ function buyViaWhatsApp(productId) {
 
 function checkoutWhatsApp() {
   if (!store || store.cart.length === 0) {
-    showToast("Adicione produtos à sua sacola para finalizar a compra.");
+    showToast("Adicione semijoias à sua sacola para finalizar a compra.");
     return;
   }
 
-  const phone = "5511999999999";
+  const phone = "5561996050988"; // WhatsApp Izaura Semijoias: (61) 99605-0988
   let itemsList = store.cart.map(i => `• ${i.qty}x ${i.name} (${i.variant}) - R$ ${(i.price * i.qty).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`).join('\n');
   let total = store.getTotal().toLocaleString('pt-BR', { minimumFractionDigits: 2 });
   let cupomText = store.coupon ? `\nCupom aplicado: ${store.coupon} (${store.discountPercent}% OFF)` : '';
 
-  let message = `*NOVO PEDIDO - RARIDADE GOLD*\n\nOlá! Gostaria de finalizar meu pedido com atendimento VIP:\n\n${itemsList}\n${cupomText}\n*Total: R$ ${total}*\n\nPor favor, confirmem as opções de frete e forma de pagamento (Pix 5% OFF ou Cartão em até 12x).`;
+  let message = `*NOVO PEDIDO - IZAURA SEMIJOIAS*\n\nOlá Iza! Gostaria de finalizar meu pedido com você:\n\n${itemsList}\n${cupomText}\n*Total: R$ ${total}*\n\nGostaria de combinar a entrega / retirada na loja em Sobradinho - DF e a forma de pagamento (Pix 5% OFF ou Cartão em até 12x).`;
 
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
 }
