@@ -1,155 +1,157 @@
 /**
- * IZAURA SEMIJOIAS - INTERACTIVE APP ENGINE
- * Joalheria fina & Semijoias em Sobradinho, Brasília - DF
- * Avaliação 5.0 ★★★★★ (52 avaliações no Google)
+ * M JÓIAS - MOTOR INTERATIVO & E-COMMERCE
+ * Joalheria em Sobradinho 1, Brasília - DF (Feira Modelo, Bloco C Box 272)
+ * Avaliação 5.0 ★★★★★ (8 avaliações no Google Maps)
+ * Telefone / WhatsApp: (61) 99134-3714
+ * Empresa que acolhe a comunidade LGBTQ+
  */
 
 // ==========================================================================
-// BANCO DE DADOS DE PRODUTOS (IZAURA SEMIJOIAS)
+// BANCO DE DADOS DE PRODUTOS (M JÓIAS)
 // ==========================================================================
 const PRODUCTS = [
   {
     id: 1,
-    name: "Conjunto Raiane: Brincos Argola + Colar Ponto de Luz 18K",
-    category: "conjuntos",
-    tags: ["bestseller", "conjuntos"],
+    name: "Par de Alianças Casamento Ouro 18K Anatômicas Polidas",
+    category: "aliancas",
+    tags: ["bestseller", "aliancas"],
     badge: "MAIS VENDIDO",
     badgeType: "badge-gold",
-    priceCompare: 449.00,
-    price: 349.00,
+    priceCompare: 2490.00,
+    price: 1980.00,
     rating: 5.0,
-    reviewsCount: 52,
-    imgMain: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80",
-    imgHover: "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=700&q=80",
+    reviewsCount: 8,
+    imgMain: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80",
+    imgHover: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=700&q=80",
     colors: ["#C5A059", "#E5E5E5"],
-    sizes: ["Tamanho Único"],
-    description: "Conjunto clássico e delicado que conquistou nossas clientes: par de brincos argola cravejada com microzircônias e colar ponto de luz em berço de ouro 18K. Hipoalergênico, com garantia e embalagem para presente."
+    sizes: ["Aros 12 ao 32 (Gravação Grátis)"],
+    description: "Aliança clássica de casamento com interior anatômico confortável e acabamento espelhado de alta joalheria. Ouro 18K legítimo com certificado eterno de autenticidade, estojo luxuoso de veludo e gravação personalizada dos nomes e data inclusos."
   },
   {
     id: 2,
-    name: "Corrente Veneziana Banhada a Ouro 18K com Pingente Mandala",
+    name: "Anel Solitário Supreme Zircônia Lapidação Brilhante Ouro 18K",
+    category: "aneis",
+    tags: ["bestseller", "aneis"],
+    badge: "EXCLUSIVO",
+    badgeType: "badge-gold",
+    priceCompare: 690.00,
+    price: 499.00,
+    rating: 5.0,
+    reviewsCount: 8,
+    imgMain: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=700&q=80",
+    imgHover: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80",
+    colors: ["#C5A059", "#E5E5E5"],
+    sizes: ["Aro 14", "Aro 16", "Aro 18", "Aro 20", "Aro 22"],
+    description: "Anel solitário elegante com garras finas que valorizam a pedra central de zircônia lapidada em corte brilhante de alta refração. Acompanhamento perfeito para alianças de casamento e pedidos de noivado."
+  },
+  {
+    id: 3,
+    name: "Par de Alianças Prata 950 com Filete Central em Ouro 18K",
+    category: "aliancas",
+    tags: ["aliancas", "bestseller"],
+    badge: "PRATA & OURO",
+    badgeType: "badge-gold",
+    priceCompare: 580.00,
+    price: 420.00,
+    rating: 5.0,
+    reviewsCount: 8,
+    imgMain: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80",
+    imgHover: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80",
+    colors: ["#E5E5E5"],
+    sizes: ["Aros Personalizados"],
+    description: "A união equilibrada da Prata 950 com acabamento diamantado e filete nobre em ouro 18K legítimo. Resistente, moderna e hipoalergênica, perfeita para compromisso e noivado."
+  },
+  {
+    id: 4,
+    name: "Corrente Elo Veneziano Diamantada com Pingente Cruz Ouro 18K",
     category: "correntes",
     tags: ["bestseller", "correntes"],
     badge: "OURO 18K",
     badgeType: "badge-gold",
-    priceCompare: 299.00,
-    price: 229.00,
+    priceCompare: 790.00,
+    price: 589.00,
     rating: 5.0,
-    reviewsCount: 48,
+    reviewsCount: 8,
     imgMain: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80",
     imgHover: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=700&q=80",
     colors: ["#C5A059", "#E5E5E5"],
     sizes: ["45cm", "50cm", "60cm"],
-    description: "Corrente metálica elo veneziana diamantada com banho reforçado de ouro 18K e verniz protetor cataforético. Pingente mandala detalhado com brilho refinado. Fecho resistente com trava."
+    description: "Corrente encorpada elo veneziano diamantado com brilho radiante e fecho resistente tipo bóia. Acompanha pingente de cruz com detalhes lapidados de alta precisão."
   },
   {
-    id: 3,
-    name: "Brinco Argola Cravejada com Microzircônias 5A Ouro 18K",
+    id: 5,
+    name: "Brinco Argola Cravejada Microzircônias 5A Banho Ouro 18K",
     category: "brincos",
-    tags: ["bestseller", "brincos"],
-    badge: "DESTAQUE",
+    tags: ["brincos", "lancamentos"],
+    badge: "CLÁSSICO",
     badgeType: "badge-gold",
-    priceCompare: 219.00,
-    price: 169.00,
+    priceCompare: 249.00,
+    price: 189.00,
     rating: 5.0,
-    reviewsCount: 52,
+    reviewsCount: 8,
     imgMain: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=700&q=80",
     imgHover: "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=700&q=80",
     colors: ["#C5A059", "#E5E5E5"],
     sizes: ["P (12mm)", "M (16mm)", "G (20mm)"],
-    description: "Argola queridinha das clientes Izaura: fecho click super prático e confortável, cravação frontal e interna com zircônias de corte brilhante. Perfeita para usar todos os dias com elegância."
+    description: "Argola queridinha com fecho click ultra seguro e cravação manual de microzircônias padrão 5A. Hipoalergênica, leve e perfeita para compor looks casuais ou de festa."
   },
   {
-    id: 4,
-    name: "Pulseira Riviera Cravejada com Zircônias Cristais Ouro 18K",
+    id: 6,
+    name: "Pulseira Riviera Clássica Cravejada Zircônias Cristais Ouro 18K",
     category: "conjuntos",
     tags: ["bestseller", "conjuntos"],
-    badge: "LUXO",
+    badge: "ALTA JOALHERIA",
     badgeType: "badge-gold",
-    priceCompare: 389.00,
-    price: 289.00,
+    priceCompare: 590.00,
+    price: 399.00,
     rating: 5.0,
-    reviewsCount: 46,
+    reviewsCount: 8,
     imgMain: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=700&q=80",
     imgHover: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80",
     colors: ["#C5A059", "#E5E5E5"],
     sizes: ["16cm", "18cm", "20cm"],
-    description: "A clássica Riviera que nunca sai de moda. Pedras de zircônia cúbica 5A cravadas individualmente em garras polidas. Fecho gaveta duplo de alta joalheria."
-  },
-  {
-    id: 5,
-    name: "Conjunto Duo: Colar Choker + Brinco Gota Zircônia",
-    category: "conjuntos",
-    tags: ["kits", "bestseller"],
-    badge: "-25% OFF",
-    badgeType: "badge-discount",
-    priceCompare: 420.00,
-    price: 315.00,
-    rating: 5.0,
-    reviewsCount: 51,
-    imgMain: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80",
-    imgHover: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80",
-    colors: ["#C5A059"],
-    sizes: ["Único"],
-    description: "Harmonia impecável entre a choker de elos delicados e o par de brincos com pedra em formato de gota facetada. Ideal para presentear com estilo e afeto."
-  },
-  {
-    id: 6,
-    name: "Anel Solitário Supreme Cristal Lapidado Ouro 18K",
-    category: "aneis",
-    tags: ["lancamentos", "aneis"],
-    badge: "EXCLUSIVO",
-    badgeType: "badge-gold",
-    priceCompare: 230.00,
-    price: 179.00,
-    rating: 5.0,
-    reviewsCount: 43,
-    imgMain: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80",
-    imgHover: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=700&q=80",
-    colors: ["#C5A059", "#E5E5E5"],
-    sizes: ["Aro 14", "Aro 16", "Aro 18", "Aro 20", "Aro 22"],
-    description: "Anel solitário elegante com zircônia premium central de 6mm. Banho espesso em ouro 18K, tecnologia antialérgica livre de níquel e acabamento espelhado."
+    description: "A clássica e atemporal pulseira Riviera com fecho joia e trava lateral de segurança. Pedras lapidadas individualmente com brilho reflexivo que valoriza qualquer ocasião."
   },
   {
     id: 7,
-    name: "Brinco Ear Cuff Pérolas Shell & Cristais Navete",
-    category: "brincos",
-    tags: ["lancamentos", "brincos"],
-    badge: "NOVO",
+    name: "Colar Veneziana Ponto de Luz Zircônia Redonda Ouro 18K",
+    category: "colares",
+    tags: ["colares", "lancamentos"],
+    badge: "DELICADO",
     badgeType: "badge-new",
-    priceCompare: 210.00,
-    price: 159.00,
+    priceCompare: 280.00,
+    price: 199.00,
     rating: 5.0,
-    reviewsCount: 39,
-    imgMain: "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=700&q=80",
-    imgHover: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=700&q=80",
-    colors: ["#C5A059"],
-    sizes: ["Par Padrão"],
-    description: "Acessório moderno que contorna a orelha com suavidade e sofisticação. Pérolas shell com brilho natural combinadas com zircônias em corte navete."
+    reviewsCount: 8,
+    imgMain: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=700&q=80",
+    imgHover: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80",
+    colors: ["#C5A059", "#E5E5E5"],
+    sizes: ["40cm + 5cm extensor"],
+    description: "Colar ponto de luz em berço de ouro 18K com corrente veneziana suave ao toque. Uma peça essencial no porta-joias de quem ama elegância minimalista."
   },
   {
     id: 8,
-    name: "Corrente Elo Português 45cm com Fecho Boia Frontal",
-    category: "correntes",
-    tags: ["correntes", "lancamentos"],
+    name: "Anel Meia Aliança Cravejado com Fileiras de Zircônias Baguete",
+    category: "aneis",
+    tags: ["aneis", "lancamentos"],
     badge: "TENDÊNCIA",
     badgeType: "badge-new",
-    priceCompare: 290.00,
-    price: 229.00,
+    priceCompare: 420.00,
+    price: 310.00,
     rating: 5.0,
-    reviewsCount: 47,
-    imgMain: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80",
-    imgHover: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80",
-    colors: ["#C5A059"],
-    sizes: ["45cm"],
-    description: "Corrente encorpada em elo português com fecho boia decorativo que pode ser usado para frente. Uma semijoia versátil, contemporânea e cheia de personalidade."
+    reviewsCount: 8,
+    imgMain: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80",
+    imgHover: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=700&q=80",
+    colors: ["#C5A059", "#E5E5E5"],
+    sizes: ["Aro 14", "Aro 16", "Aro 18", "Aro 20"],
+    description: "Aparador sofisticado para usar junto com alianças de casamento ou solitários. Zircônias com lapidação baguete e brilhante montadas em trilho espelhado."
   }
 ];
 
 // ==========================================================================
-// ESTADO GLOBAL DO CARRINHO E WISHLIST
+// ESTADO GLOBAL DO CARRINHO E WISHLIST (M JÓIAS)
 // ==========================================================================
-class IzauraStore {
+class MJoiasStore {
   constructor() {
     this.cart = this.loadCart();
     this.wishlist = this.loadWishlist();
@@ -162,15 +164,15 @@ class IzauraStore {
 
   loadCart() {
     try {
-      const saved = localStorage.getItem('izaura_semijoias_cart');
+      const saved = localStorage.getItem('mjoias_cart');
       return saved ? JSON.parse(saved) : [
         {
           id: 1,
-          name: "Conjunto Raiane: Brincos Argola + Colar Ponto de Luz 18K",
-          variant: "Dourado / Único",
-          price: 349.00,
+          name: "Par de Alianças Casamento Ouro 18K Anatômicas Polidas",
+          variant: "Ouro 18K / Gravação Grátis",
+          price: 1980.00,
           qty: 1,
-          img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80"
+          img: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80"
         }
       ];
     } catch (e) {
@@ -179,21 +181,21 @@ class IzauraStore {
   }
 
   saveCart() {
-    localStorage.setItem('izaura_semijoias_cart', JSON.stringify(this.cart));
+    localStorage.setItem('mjoias_cart', JSON.stringify(this.cart));
     this.renderCartUI();
   }
 
   loadWishlist() {
     try {
-      const saved = localStorage.getItem('izaura_semijoias_wishlist');
-      return saved ? JSON.parse(saved) : [1, 3];
+      const saved = localStorage.getItem('mjoias_wishlist');
+      return saved ? JSON.parse(saved) : [1, 2];
     } catch (e) {
       return [];
     }
   }
 
   saveWishlist() {
-    localStorage.setItem('izaura_semijoias_wishlist', JSON.stringify(this.wishlist));
+    localStorage.setItem('mjoias_wishlist', JSON.stringify(this.wishlist));
     this.updateWishlistBadges();
   }
 
@@ -244,11 +246,11 @@ class IzauraStore {
 
   applyCoupon(code) {
     const cleanCode = code.trim().toUpperCase();
-    if (cleanCode === "IZAURA10" || cleanCode === "SOBRADINHO10" || cleanCode === "BEMVINDA") {
+    if (cleanCode === "MJOIAS10" || cleanCode === "SOBRADINHO10" || cleanCode === "CASAMENTO10") {
       this.coupon = cleanCode;
       this.discountPercent = 10;
       this.renderCartUI();
-      showToast("Cupom Izaura de 10% OFF aplicado com sucesso!");
+      showToast("Cupom M Jóias de 10% OFF aplicado com sucesso!");
       return true;
     } else if (cleanCode === "VIP15") {
       this.coupon = cleanCode;
@@ -305,7 +307,6 @@ class IzauraStore {
       badge.textContent = this.wishlist.length;
     }
 
-    // Atualiza botões nos cards
     document.querySelectorAll('.btn-wishlist-toggle').forEach(btn => {
       const pid = Number(btn.getAttribute('data-product-id'));
       if (this.wishlist.includes(pid)) {
@@ -330,8 +331,8 @@ class IzauraStore {
       cartList.innerHTML = `
         <div class="cart-empty-state">
           <svg viewBox="0 0 512 512"><path d="M463.54,164.66c-14.69-16.9-35.96-26.65-58.35-26.75H151.58l-4.87-16.78c-9.79-32.25-39.24-54.54-72.94-55.2l-1.22-.24h-24.31c-10.08,0-18.24,8.16-18.24,18.24s8.16,18.24,18.24,18.24h24.31c18.41,.16,34.43,12.59,39.15,30.4l61.51,207.4c9.93,32.68,40.01,55.07,74.16,55.2h142.97c38.89-.42,71.5-29.5,76.35-68.08l14.59-100.66c3.39-22.19-3.1-44.76-17.75-61.76h0Zm-18.24,57.14l-14.59,100.9c-3.19,19.87-20.24,34.56-40.36,34.77H247.38c-18.06,0-33.99-11.86-39.15-29.18l-45.72-154.15h243.14c11.91,.18,23.15,5.56,30.76,14.73,7.61,9.16,10.86,21.19,8.87,32.93h.01Z"/></svg>
-          <p>Sua sacola de compras está vazia.</p>
-          <a href="#produtos" onclick="store.closeCart()" class="btn btn-primary-gold" style="margin-top: 15px; font-size: 11px;">Ver Semijoias</a>
+          <p>Sua sacola de joias está vazia.</p>
+          <a href="#produtos" onclick="store.closeCart()" class="btn btn-primary-gold" style="margin-top: 15px; font-size: 11px;">Ver Joias & Alianças</a>
         </div>
       `;
     } else {
@@ -366,10 +367,10 @@ class IzauraStore {
     const progressBar = document.getElementById('shippingProgressBar');
     if (shippingText && progressBar) {
       if (remainingForFreeShipping <= 0) {
-        shippingText.innerHTML = `🎉 Parabéns! Você ganhou <strong>FRETE GRÁTIS</strong> com seguro e embalagem especial!`;
+        shippingText.innerHTML = `🎉 Parabéns! Você ganhou <strong>FRETE GRÁTIS</strong> com seguro, certificado e estojo de luxo!`;
         progressBar.style.width = '100%';
       } else {
-        shippingText.innerHTML = `Faltam <strong>R$ ${remainingForFreeShipping.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</strong> para você garantir <strong>FRETE GRÁTIS</strong>!`;
+        shippingText.innerHTML = `Faltam <strong>R$ ${remainingForFreeShipping.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</strong> para garantir <strong>FRETE GRÁTIS</strong>!`;
         progressBar.style.width = `${progressPercent}%`;
       }
     }
@@ -394,7 +395,7 @@ class IzauraStore {
 
     const pixTotal = finalTotal * 0.95; // 5% de desconto no Pix
     if (pixTotalEl) {
-      pixTotalEl.textContent = `ou R$ ${pixTotal.toLocaleString('pt-BR', { minimumFractionDigits: 2 })} no Pix (5% OFF)`;
+      pixTotalEl.textContent = `ou R$ ${pixTotal.toLocaleString('pt-BR', { minimumFractionDigits: 2 })} à vista no Pix (5% OFF)`;
     }
   }
 
@@ -407,7 +408,7 @@ class IzauraStore {
 // Inicializa a loja
 let store;
 document.addEventListener('DOMContentLoaded', () => {
-  store = new IzauraStore();
+  store = new MJoiasStore();
   initAnnouncementBar();
   initHeroSlider();
   initProductsGrid();
@@ -508,18 +509,18 @@ function initHeroSlider() {
 }
 
 // ==========================================================================
-// GRID DE PRODUTOS & TABS DE FILTRO (IZAURA SEMIJOIAS)
+// GRID DE PRODUTOS & TABS DE FILTRO (M JÓIAS)
 // ==========================================================================
 function initProductsGrid() {
   const grid = document.getElementById('productsGrid');
   const tabs = document.querySelectorAll('.filter-tab-btn');
 
   const catLabels = {
-    conjuntos: 'Conjuntos Delicados',
-    colares: 'Colares & Chokers',
+    aliancas: 'Alianças de Casamento',
+    aneis: 'Anéis & Solitários',
+    correntes: 'Correntes & Pingentes',
     brincos: 'Brincos & Argolas',
-    correntes: 'Correntes Metálicas',
-    aneis: 'Anéis & Alianças'
+    conjuntos: 'Rivieras & Combos'
   };
 
   function render(filter = 'todos') {
@@ -530,12 +531,14 @@ function initProductsGrid() {
       filtered = PRODUCTS.filter(p => p.tags.includes('bestseller'));
     } else if (filter === 'lancamentos') {
       filtered = PRODUCTS.filter(p => p.tags.includes('lancamentos'));
+    } else if (filter === 'aliancas') {
+      filtered = PRODUCTS.filter(p => p.category === 'aliancas');
+    } else if (filter === 'aneis') {
+      filtered = PRODUCTS.filter(p => p.category === 'aneis');
     } else if (filter === 'brincos') {
       filtered = PRODUCTS.filter(p => p.category === 'brincos');
     } else if (filter === 'colares') {
       filtered = PRODUCTS.filter(p => p.category === 'colares');
-    } else if (filter === 'aneis') {
-      filtered = PRODUCTS.filter(p => p.category === 'aneis');
     } else if (filter === 'correntes') {
       filtered = PRODUCTS.filter(p => p.category === 'correntes');
     } else if (filter === 'conjuntos') {
@@ -546,7 +549,7 @@ function initProductsGrid() {
       const isFav = store ? store.wishlist.includes(product.id) : false;
       const installmentsVal = (product.price / 12).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
       const pixVal = (product.price * 0.95).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
-      const label = catLabels[product.category] || 'Semijoia Fina';
+      const label = catLabels[product.category] || 'Joalheria Fina';
 
       return `
         <div class="product-card" data-product-id="${product.id}">
@@ -578,12 +581,12 @@ function initProductsGrid() {
 
             <div class="product-rating">
               <div class="rating-stars">★★★★★</div>
-              <span class="rating-count">(${product.reviewsCount})</span>
+              <span class="rating-count">5.0 (${product.reviewsCount})</span>
             </div>
 
             <div class="product-swatches">
               ${product.colors.map((color, i) => `
-                <span class="color-swatch ${i === 0 ? 'active' : ''}" style="background-color: ${color};" title="Cor variante"></span>
+                <span class="color-swatch ${i === 0 ? 'active' : ''}" style="background-color: ${color};" title="Variação"></span>
               `).join('')}
             </div>
 
@@ -645,12 +648,12 @@ function openQuickView(productId) {
     </div>
 
     <div class="quickview-info">
-      <span class="product-category-tag">${product.badge} • IZAURA SEMIJOIAS</span>
+      <span class="product-category-tag">${product.badge} • M JÓIAS</span>
       <h2 class="quickview-title">${product.name}</h2>
       
       <div class="product-rating">
         <div class="rating-stars">★★★★★</div>
-        <span class="rating-count">${product.rating} (${product.reviewsCount} avaliações no Google Maps)</span>
+        <span class="rating-count">${product.rating} (8 avaliações 5 estrelas no Google Maps)</span>
       </div>
 
       <div class="quickview-price">
@@ -681,7 +684,7 @@ function openQuickView(productId) {
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
           Adicionar à Sacola
         </button>
-        <button class="btn btn-outline-dark" onclick="buyViaWhatsApp(${product.id})" title="Atendimento com a Iza no WhatsApp">
+        <button class="btn btn-outline-dark" onclick="buyViaWhatsApp(${product.id})" title="Atendimento com M Jóias no WhatsApp">
           WhatsApp
         </button>
       </div>
@@ -763,7 +766,7 @@ function initSearchModal() {
 
     if (matches.length === 0) {
       resultsContainer.style.display = 'block';
-      resultsContainer.innerHTML = `<div style="padding: 15px; text-align: center; color: #888; font-size: 13px;">Nenhuma semijoia encontrada para "${query}". Tente buscar por "Brinco", "Colar", "Anel", "Mandala" ou "Argola".</div>`;
+      resultsContainer.innerHTML = `<div style="padding: 15px; text-align: center; color: #888; font-size: 13px;">Nenhuma joia encontrada para "${query}". Tente buscar por "Aliança", "Casamento", "Solitário", "Prata", "Cruz" ou "Ouro 18K".</div>`;
     } else {
       resultsContainer.style.display = 'block';
       resultsContainer.innerHTML = matches.map(p => `
@@ -843,14 +846,14 @@ function initHeaderScroll() {
 }
 
 // ==========================================================================
-// WHATSAPP CONCIERGE INTEGRATION (IZAURA SEMIJOIAS)
+// WHATSAPP CONCIERGE INTEGRATION (M JÓIAS)
 // ==========================================================================
 function buyViaWhatsApp(productId) {
   const product = PRODUCTS.find(p => p.id === Number(productId));
-  const phone = "5561996050988"; // WhatsApp Izaura Semijoias: (61) 99605-0988
-  let msg = "Olá Izaura Semijoias! Gostaria de atendimento personalizado para escolher minhas peças.";
+  const phone = "5561991343714"; // WhatsApp M Jóias: (61) 99134-3714
+  let msg = "Olá, M Jóias! Gostaria de atendimento personalizado para escolher minhas alianças ou joias.";
   if (product) {
-    msg = `Olá Iza! Gostaria de mais informações sobre a semijoia: *${product.name}* (Ref #${product.id}) no valor de R$ ${product.price.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}.`;
+    msg = `Olá, M Jóias! Gostaria de mais informações sobre: *${product.name}* (Ref #${product.id}) no valor de R$ ${product.price.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}.`;
   }
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
@@ -858,16 +861,16 @@ function buyViaWhatsApp(productId) {
 
 function checkoutWhatsApp() {
   if (!store || store.cart.length === 0) {
-    showToast("Adicione semijoias à sua sacola para finalizar a compra.");
+    showToast("Adicione joias ou alianças à sua sacola para finalizar a compra.");
     return;
   }
 
-  const phone = "5561996050988"; // WhatsApp Izaura Semijoias: (61) 99605-0988
+  const phone = "5561991343714"; // WhatsApp M Jóias: (61) 99134-3714
   let itemsList = store.cart.map(i => `• ${i.qty}x ${i.name} (${i.variant}) - R$ ${(i.price * i.qty).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`).join('\n');
   let total = store.getTotal().toLocaleString('pt-BR', { minimumFractionDigits: 2 });
   let cupomText = store.coupon ? `\nCupom aplicado: ${store.coupon} (${store.discountPercent}% OFF)` : '';
 
-  let message = `*NOVO PEDIDO - IZAURA SEMIJOIAS*\n\nOlá Iza! Gostaria de finalizar meu pedido com você:\n\n${itemsList}\n${cupomText}\n*Total: R$ ${total}*\n\nGostaria de combinar a entrega / retirada na loja em Sobradinho - DF e a forma de pagamento (Pix 5% OFF ou Cartão em até 12x).`;
+  let message = `*NOVO PEDIDO - M JÓIAS*\n(Feira Modelo Bloco C Box 272 - Sobradinho 1)\n\nOlá! Gostaria de finalizar meu pedido com a M Jóias:\n\n${itemsList}\n${cupomText}\n*Total: R$ ${total}*\n\nGostaria de combinar a entrega / retirada na Feira Modelo de Sobradinho 1 e a forma de pagamento (Pix 5% OFF ou Cartão em até 12x).`;
 
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
 }

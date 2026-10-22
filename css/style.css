@@ -1,6 +1,6 @@
 /* ==========================================================================
-   RARIDADE GOLD - DESIGN SYSTEM & STYLESHEET
-   Inspirado na sofisticação minimalista de Saint Germain Brand
+   M JÓIAS - DESIGN SYSTEM & STYLESHEET
+   Joalheria & Alianças de Casamento (Sobradinho 1 - DF)
    Cores: Pure White (#FFF), Jet Black (#0D0D0D), Champagne Gold (#C5A059)
    Tipografia: Outfit (Modern Sans), Jost (Clean Geometric), Cinzel (Luxury Serif)
    ========================================================================== */
@@ -296,9 +296,12 @@ ul, ol {
 }
 
 .brand-logo-img {
-  height: 54px;
-  width: 54px;
-  object-fit: contain;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(197, 160, 89, 0.4);
   transition: transform var(--transition-normal);
 }
 
@@ -1671,6 +1674,166 @@ ul, ol {
 }
 
 /* ==========================================================================
+   GOOGLE REVIEWS SUMMARY SCORE CARD (5.0 • 8 AVALIAÇÕES)
+   ========================================================================== */
+.google-score-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 24px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.google-score-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.google-g-logo {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F8F9FA;
+  border-radius: 50%;
+  border: 1px solid #E5E7EB;
+  flex-shrink: 0;
+}
+
+.google-score-num {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1F2937;
+  line-height: 1;
+  font-family: var(--font-heading);
+}
+
+.google-score-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.google-stars {
+  color: #F59E0B;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.google-score-text {
+  font-size: 13px;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+.google-score-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 220px;
+}
+
+.rating-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #4B5563;
+  font-weight: 600;
+}
+
+.rating-bar-track {
+  flex-grow: 1;
+  height: 7px;
+  background: #E5E7EB;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.rating-bar-fill {
+  height: 100%;
+  background: #F59E0B;
+  border-radius: 10px;
+}
+
+.google-score-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.lgbtq-highlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #F3E8FF;
+  border: 1px solid #D8B4FE;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7E22CE;
+}
+
+.lgbtq-highlight-badge svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ==========================================================================
+   ENTORNO & COMODIDADES BAR (FEIRA MODELO / SOBRADINHO 1)
+   ========================================================================== */
+.amenities-bar-wrapper {
+  background: #FAFAFA;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  padding: 18px 0;
+}
+
+.amenities-scroll-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.amenity-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  color: #374151;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.amenity-chip:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-dark);
+  transform: translateY(-1px);
+}
+
+.amenity-chip svg {
+  width: 15px;
+  height: 15px;
+  color: var(--gold-primary);
+}
+
+/* ==========================================================================
    INSTAGRAM LOOKBOOK FEED (#RARIDADEGOLD)
    ========================================================================== */
 .instagram-grid {
@@ -2544,6 +2707,20 @@ ul, ol {
 }
 
 /* ==========================================================================
+   LOCATION LAYOUT GRID BASE & MOBILE BOTTOM NAV BASE
+   ========================================================================== */
+.location-layout-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.mobile-bottom-nav {
+  display: none;
+}
+
+/* ==========================================================================
    RESPONSIVIDADE (TABLETS E MOBILE)
    ========================================================================== */
 @media (max-width: 1024px) {
@@ -2563,9 +2740,30 @@ ul, ol {
 
 @media (max-width: 768px) {
   :root {
-    --header-height: 65px;
+    --header-height: 60px;
   }
 
+  /* Limitação do tamanho da tela e prevenção de overflow horizontal */
+  html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: calc(62px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Barra de Anúncios Mobile */
+  .announcement-bar {
+    height: 32px;
+    padding: 0 10px;
+  }
+
+  .announcement-slider {
+    font-size: 9.5px;
+    letter-spacing: 0.02em;
+  }
+
+  /* Esconde Topbar Secundária e Navegação Desktop */
   .secondary-topbar {
     display: none;
   }
@@ -2574,8 +2772,19 @@ ul, ol {
     display: none;
   }
 
+  /* Cabeçalho Compacto e Equilibrado */
+  .main-header {
+    height: var(--header-height);
+  }
+
+  .header-main-row {
+    height: var(--header-height);
+  }
+
   .hamburger-btn {
     display: flex;
+    width: 38px;
+    height: 38px;
   }
 
   .header-search-bar {
@@ -2583,95 +2792,559 @@ ul, ol {
   }
 
   .brand-logo-img {
-    height: 42px;
-    width: 42px;
+    height: 38px;
+    width: 38px;
   }
 
   .brand-name {
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 0.12em;
   }
 
   .brand-subtitle {
-    font-size: 7.5px;
+    font-size: 6.5px;
+    letter-spacing: 0.2em;
   }
 
+  .header-action-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Hero Slider Reenquadrado para Mobile */
   .hero-slider {
-    height: 70vh;
-    min-height: 460px;
+    height: 74vh;
+    min-height: 480px;
+    max-height: 560px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .hero-subtitle-badge {
+    font-size: 9px;
+    padding: 4px 10px;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
   }
 
   .hero-title {
-    font-size: 28px;
+    font-size: clamp(21px, 6vw, 28px);
+    line-height: 1.22;
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
   }
 
   .hero-description {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 1.45;
+    margin-bottom: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
   }
 
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 11px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .slider-arrow {
+    display: none;
+  }
+
+  /* Barra de Benefícios: Carrossel Snap Touch Horizontal */
+  .benefits-section {
+    padding: 18px 0 10px;
+  }
+
+  .benefits-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    padding: 4px 16px 14px;
+    margin: 0 -16px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .benefits-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .benefit-card {
+    min-width: 220px;
+    max-width: 250px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding: 14px 16px;
+    background: #FFF;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xs);
+  }
+
+  .benefit-card h4 {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .benefit-card p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  /* Stories Destaques Rápidos */
+  .stories-section {
+    padding: 14px 0 6px;
+  }
+
+  .stories-carousel {
+    gap: 12px;
+    padding: 4px 16px 10px;
+    margin: 0 -16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .stories-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .story-avatar {
+    width: 52px;
+    height: 52px;
+    padding: 2px;
+  }
+
+  .story-title {
+    font-size: 10px;
+  }
+
+  /* Grade de Categorias 2x2 */
+  .category-tiles-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .category-tile-card {
+    height: 175px;
+    border-radius: var(--radius-xs);
+  }
+
+  .category-tile-overlay {
+    padding: 12px 10px;
+  }
+
+  .category-tile-tag {
+    font-size: 7.5px;
+    letter-spacing: 0.1em;
+  }
+
+  .category-tile-title {
+    font-size: 12px;
+    line-height: 1.25;
+    margin: 2px 0 5px;
+  }
+
+  .category-tile-cta {
+    font-size: 9.5px;
+  }
+
+  /* Tabs de Filtro: Swipe Horizontal de Pílulas */
+  .filter-tabs-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 8px;
+    padding: 4px 16px 14px;
+    margin: 0 -16px 16px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start;
+  }
+
+  .filter-tabs-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-tab-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 8px 14px;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    border-radius: var(--radius-full);
+  }
+
+  /* Vitrine de Produtos: Grade de 2 Colunas */
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .product-card {
+    border-radius: var(--radius-xs);
+  }
+
+  .product-image-container {
+    aspect-ratio: 1 / 1;
   }
 
   .product-info {
-    padding: 12px 14px 16px;
+    padding: 10px 10px 12px;
+  }
+
+  .product-category-tag {
+    font-size: 8.5px;
   }
 
   .product-title {
-    font-size: 13px;
-    min-height: 36px;
+    font-size: 12px;
+    line-height: 1.3;
+    min-height: 32px;
+    margin: 3px 0 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .product-rating {
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+
+  .price-compare {
+    font-size: 10px;
   }
 
   .price-current {
-    font-size: 15px;
+    font-size: 14.5px;
   }
 
+  .price-installments {
+    font-size: 9.5px;
+  }
+
+  .price-pix-discount {
+    font-size: 9.5px;
+    color: #047857;
+    font-weight: 600;
+  }
+
+  .btn-add-card {
+    padding: 8px 10px;
+    font-size: 10.5px;
+    margin-top: 8px;
+  }
+
+  /* Seções de Campanha Editorial */
   .split-campaign-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .split-campaign-card {
-    height: 420px;
+    height: 380px;
+  }
+
+  .split-campaign-content {
+    padding: 24px 20px;
+  }
+
+  .split-campaign-title {
+    font-size: 20px;
+  }
+
+  /* Módulo Combo dos Noivos Reenquadrado */
+  .combo-banner-section {
+    padding: 20px 14px;
+    border-radius: var(--radius-sm);
   }
 
   .combo-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .combo-info h3 {
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .combo-info p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 14px;
   }
 
   .combo-items-row {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
   }
 
   .combo-item-box {
+    flex: 1;
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .combo-item-box img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .combo-item-details h5 {
+    font-size: 10.5px;
+  }
+
+  .combo-item-details span {
+    font-size: 9px;
+  }
+
+  .combo-plus-sign {
+    font-size: 16px;
+    padding: 0 2px;
+  }
+
+  .combo-new-price {
+    font-size: 24px;
+  }
+
+  .combo-economy {
+    font-size: 10.5px;
+  }
+
+  .combo-pricing-action {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .combo-pricing-action .btn {
     width: 100%;
+    font-size: 11px;
+    padding: 12px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Google Reviews Score Card & Grid Mobile */
+  .google-score-card {
+    padding: 18px 14px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .google-score-left {
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .google-score-num {
+    font-size: 36px;
+  }
+
+  .google-score-bars {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .google-score-right {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .lgbtq-highlight-badge {
+    width: 100%;
+    justify-content: center;
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .google-score-right .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 
   .reviews-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
+  .review-card {
+    padding: 16px 14px;
+  }
+
+  .review-body {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /* Seção Localização em 1 Coluna */
+  .location-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #localizacao .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Instagram Grid Mobile */
+  .instagram-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+
+  /* Rodapé Mobile */
   .footer-top-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 24px;
+  }
+
+  .footer-trust-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Modais e Drawers */
+  .cart-drawer {
+    width: 100vw;
+    max-width: 100%;
   }
 
   .quickview-modal {
+    width: 94vw;
+    max-height: 88vh;
+    padding: 18px 14px;
     grid-template-columns: 1fr;
   }
 
   .quickview-gallery {
-    padding: 20px;
+    padding: 10px;
+  }
+
+  .search-modal-container {
+    width: 94vw;
+    max-height: 85vh;
+    padding: 18px 14px;
+  }
+
+  /* Botão Flutuante do WhatsApp acima da Bottom Nav */
+  .whatsapp-floating-btn {
+    bottom: calc(68px + env(safe-area-inset-bottom, 0px));
+    right: 14px;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4);
   }
 
   .whatsapp-floating-btn span {
     display: none;
   }
 
-  .whatsapp-floating-btn {
-    padding: 12px;
-    width: 48px;
-    height: 48px;
+  /* Mobile App Bottom Navigation Bar */
+  .mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(56px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    z-index: 999;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
+  }
+
+  .bottom-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 3px;
+    color: #555;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: var(--font-sans);
+    padding: 6px 10px;
+    flex: 1;
+    transition: color var(--transition-fast);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .bottom-nav-item.active,
+  .bottom-nav-item:hover {
+    color: var(--gold-dark);
+  }
+
+  .bottom-nav-item svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: transform var(--transition-fast);
+  }
+
+  .bottom-nav-item:active svg {
+    transform: scale(0.9);
+  }
+}
+
+/* Telas Ultra Compactas (e.g., iPhone SE, Galaxy Fold) */
+@media (max-width: 380px) {
+  .brand-name {
+    font-size: 14.5px;
+  }
+  .brand-logo-img {
+    height: 34px;
+    width: 34px;
+  }
+  .product-title {
+    font-size: 11px;
+    min-height: 28px;
+  }
+  .price-current {
+    font-size: 13.5px;
+  }
+  .hero-title {
+    font-size: 20px;
   }
 }
